@@ -13,8 +13,8 @@ body {
 }
 .sub-box {
   background-color: white;
-  height: fit-content;
   width: 560px;
+  height: fit-content;
 }
 .add-box {
   background-color: rgb(233, 233, 233);
@@ -77,5 +77,31 @@ ul li span {
   line-height: 40px;
   &:hover {
     background-color: rgb(233, 233, 233);
+  }
+}
+@media only screen and (max-width: 570px) {
+  .sub-box {
+    width: 400px;
+  }
+  .add .inputfeild {
+    width: 250px;
+  }
+}
+@media only screen and (max-width: 410px) {
+  .sub-box {
+    width: 300px;
+  }
+  .add .inputfeild {
+    width: 150px;
+    height: 40px;
+  }
+}
+@media only screen and (max-width: 306px) {
+  .sub-box {
+    width: 200px;
+  }
+  .add .inputfeild {
+    width: 120px;
+    height: 40px;
   }
 }
