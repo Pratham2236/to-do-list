@@ -19,11 +19,12 @@ function addtask() {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  // Your JavaScript code here
   let listcon = document.querySelector(".listcon");
+
   listcon.addEventListener("click", function (e) {
     if (e.target.tagName === "LI") {
       e.target.classList.toggle("list");
+      e.target.classList.toggle("selected"); // Toggle selected class
       savedata(listcon); // Pass listcon to the savedata function
     } else if (e.target.tagName === "SPAN") {
       e.target.parentElement.remove();
@@ -34,6 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
   showlist(listcon); // Pass listcon to the showlist function
 });
 
+//store the data in list
 function savedata(listcon) {
   localStorage.setItem("data", listcon.innerHTML);
 }

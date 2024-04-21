@@ -105,3 +105,6 @@ ul li span {
     height: 40px;
   }
 }
+.list.selected {
+  color: rgb(255, 0, 76);
+}
